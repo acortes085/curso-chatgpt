@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso al Curso</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const access = params.get("access");
+    if (access !== "demo123") {
+      window.location.href = "index.html";
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <main class="max-w-5xl mx-auto p-6">
+    <h1 class="text-2xl font-bold mb-6">Acceso al Curso: Gana Dinero con ChatGPT</h1>
+    <a href="Gana_Dinero_con_ChatGPT_Curso_Profesional.pdf" download class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 inline-block mb-4">Descargar PDF del Curso</a>
+    <ul class="list-disc pl-6 mb-6">
+      <li><a href="Calendario_Contenido_IA.xlsx" class="text-blue-600 underline">Calendario de contenidos (Excel)</a></li>
+      <li><a href="Prompt_Pack_ChatGPT.docx" class="text-blue-600 underline">Prompt Pack (Word)</a></li>
+      <li><a href="Checklist_Automatizacion_IA.pdf" class="text-blue-600 underline">Checklist de Automatización (PDF)</a></li>
+    </ul>
+    <iframe src="Gana_Dinero_con_ChatGPT_Curso_Profesional.pdf" class="w-full h-[600px] border rounded shadow"></iframe>
+  </main>
+</body>
+</html>
