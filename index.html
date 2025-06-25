@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,11 +17,37 @@
   </script>
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <main class="max-w-xl mx-auto py-20 px-6">
-    <h1 class="text-3xl font-bold mb-4">Curso: Gana Dinero con ChatGPT</h1>
-    <p class="mb-4">Accede al curso con la contraseña proporcionada en la demo.</p>
-    <input id="password" type="password" placeholder="Introduce contraseña" class="p-2 border rounded w-full mb-4"/>
-    <button onclick="checkPassword()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Entrar</button>
+  <header class="bg-white shadow mb-8">
+    <div class="max-w-4xl mx-auto px-4 py-6 flex items-center justify-between">
+      <h1 class="text-2xl font-bold">Gana Dinero con ChatGPT</h1>
+      <a href="https://www.paypal.me/AlbertoCortesCabello/9.90" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Comprar ahora - 9,90€</a>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 pb-16">
+    <img src="banner_curso_chatgpt.png" alt="Banner del curso" class="rounded shadow mb-8 w-full">
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4">¿Qué incluye este curso?</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Cómo ganar dinero con IA en 2025</li>
+        <li>Casos prácticos y herramientas reales</li>
+        <li>PDF completo + 3 plantillas descargables</li>
+        <li>Acceso inmediato al contenido web</li>
+      </ul>
+    </section>
+
+    <section class="mb-10 text-center">
+      <h2 class="text-xl font-semibold mb-4">🔐 Accede si ya compraste el curso</h2>
+      <input id="password" type="password" placeholder="Introduce contraseña" class="border px-3 py-2 rounded w-full max-w-sm mb-4">
+      <br>
+      <button onclick="checkPassword()" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Entrar al curso</button>
+      <p class="mt-2 text-sm text-gray-500">Contraseña de demo: <code>demo123</code></p>
+    </section>
   </main>
+
+  <footer class="bg-white py-6 text-center text-sm text-gray-500">
+    &copy; 2025 Curso creado por Alberto Cortés Cabello
+  </footer>
 </body>
 </html>
